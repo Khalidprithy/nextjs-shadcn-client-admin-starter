@@ -12,6 +12,7 @@ import {
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
 import { signOut, useSession } from 'next-auth/react';
+import Link from 'next/link';
 export function UserNav() {
   const { data: session } = useSession();
   if (session) {
@@ -42,8 +43,7 @@ export function UserNav() {
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
             <DropdownMenuItem>
-              Profile
-              <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+              <Link href="/profile">Profile</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
               Billing
