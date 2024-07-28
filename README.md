@@ -27,7 +27,7 @@ Make sure you have the following installed:
 
    ```bash
    git clone https://github.com/Khalidprithy/nextjs-shadcn-client-admin-starter.git
-   cd nextjs-shadcn-template
+   cd nextjs-shadcn-client-admin-starter
    ```
 
 2. **Install dependencies**:
